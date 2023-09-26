@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: right;
+}
+
+.links {
+  text-decoration: none;
+  color: #808080;
+  font-size: 15px;
+}
+
+
+.search_button {
+  background-color: #f8f9fa;
+  border: 1.5px solid #f8f9fa;
+  border-radius: 6px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 5px 4px;
+  padding: 6px 15px;
+  line-height: 27px;
+  min-height: 40px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
