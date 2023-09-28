@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+git commands
+
+
+git add filename
+git add * (to add all file)
+this will tell git to track files, it won't add changes until commit
+
+git commit -m "my message"
+
+git push
+
+git pull from other device or when sharing if someone else made changes to the code... maybe also to check if there's a more recent version
+
+-->
     <head>
         <title>Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <a href="images.html">Images</a>
-            <a href="advance.html">Advance search</a>
-        </header>
+        <nav class="headernav">
+            <a href="images.html" class="links">Images</a>
+            <a href="advance.html" class="links">Advance search</a>
+        </nav>
 
-        <section>
-            <img src="googlelogo_color_272x92dp.png" alt="google logo">
-        </section>
+        <div class="container">
+                <div>
+                <!--style="margin: 4rem; padding: 5rem;-->
+                    <img src="googlelogo_color_272x92dp.png" alt="google logo">
+                </div>
+                <div>
+                    <form action="https://google.com/search">
+                    <input type="text" name="q">
+                </div>
 
-        <section>
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="Voy a tener suerte">
-            </form>
-        </section>
+                <div>
+                    <input type="submit" value="Buscar con Google" class="search_button">
+                    <input type="submit" value="Voy a tener suerte" class="search_button">
+                </div>
+                    </form>
+                <div>
+                    <p>Ofrecido por Google en: <a href="https://www.google.com/setprefs?sig=0_xU0C79d6B9JxVGipJKUlUhyZvDc%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwiFqePKu4_6AhXHQUEAHaTiBsQQ2ZgBCBA">Espa&ntilde;ol (Latinoamérica)</a></p>
+                </div>
+        </div>
 
-        <section>
-            <p>Ofrecido por Google en: English</a> </p>
-        </section>
         <footer>
-            
-            <section>
                 <p>Argentina</p>
-            </section>
-            <section>
-
-
-            </section>
+                    <ul class="navbar">
+                        <li><a href="https://about.google/?utm_source=google-AR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
+                        <li><a href="https://www.google.com/intl/es-419_ar/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a></li>
+                        <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a></li>
+                        <li><a href="https://google.com/search/howsearchworks/?fg=1"> Cómo funciona la Búsqueda</a></li>
+                        <li><a href="https://policies.google.com/privacy?hl=es-419&amp;fg=1">Privacidad</a></li>
+                        <li><a href="https://policies.google.com/terms?hl=es-419&amp;fg=1">Condiciones</a></li>
+                        <li><div jsname="LgbsSe" class="ayzqOc pHiOh" aria-controls="_iWIRZYzFAbW-5OUP972r6AE_1" aria-haspopup="true">Preferencias</div></li>
+                    </ul>
         </footer>
 
 

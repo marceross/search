@@ -16,6 +16,13 @@
 		<section>
 			<form action="https://google.com/search">
 	            <input type="text" name="q">
+
+                <!-- build 𝚝𝚋𝚖=𝚒𝚜𝚌𝚑 -->
+                <!-- 𝚝𝚋𝚖 needs to be set to 𝚒𝚜𝚌𝚑, which tells Google we want only
+                image search results. We add 𝚝𝚢𝚙𝚎="𝚑𝚒𝚍𝚍𝚎𝚗" to the input element
+                because we don’t want the end user to have to choose that
+                themself -->
+                <!--https://stackoverflow.com/questions/54846613/custom-google-search-not-google-custom-search-->
                 <input hidden="true" name="tbm" value="isch">
 	            <input type="submit" value="Image Search">
 	        </form>

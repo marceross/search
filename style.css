@@ -1,29 +1,125 @@
+/*
+In chrome >more tools> developer tools
+Or right click> inspect
+click on the element inside the elements panel, or point in the design to go directly to the element.
+Then in the panel beside look for the styles tab to find css info*/
+
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+  font-size: 14px;
   font-family: Arial, sans-serif;
+  color: #202124;
+  background: #fff;
+  display: block;
 }
 
-.header {
+.headernav {
   text-align: right;
 }
 
 .links {
+  display: inline-block;
   text-decoration: none;
-  color: #808080;
-  font-size: 15px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: rgba(0,0,0,.87);
+  font: 13px/27px Roboto,Arial,sans-serif;
 }
+
+/*.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}*/
+
+/*.center {
+  border: 1px solid;
+  display : flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+/*this way to center the div
+.center {
+  border: 1px solid;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}*/
+
+/* margin: auto; the div will take up whatever width is specified in the CSS and the browser splits the remaining space equally between the margins on either side
+
+
+*/
+
+/*.center {
+  border: 1px solid;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; at first I used child element (.centerchild)*/
+  /*justify-content: center;*/
+  align-items: center;
+  /*margin: 1rem;*/
+  background: gray;
+}
+
+.container>div{
+
+  background-color: yellow;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/*.centerchild {
+  background-color: orange;
+  width: auto;
+  height: auto;
+}*/
+
+.bigspace {
+  margin-top: 4rem;
+  padding: 3rem;
+}
+
+/*.smallspace {
+  margin: 1rem;
+  padding: 1rem;
+}*/
+
+/*.search_bar {
+  color : transparent;
+  border-radius: 30px;
+  border: 1px solid #dfe1e5;
+}*/
 
 
 .search_button {
   background-color: #f8f9fa;
-  border: 1.5px solid #f8f9fa;
-  border-radius: 6px;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
   color: #3c4043;
+  font-family: arial,sans-serif;
   font-size: 14px;
-  margin: 5px 4px;
-  padding: 6px 15px;
+  margin: 11px 4px;
+  padding: 0 16px;
   line-height: 27px;
-  min-height: 40px;
-  width: 150px;
+  height: 36px;
+  min-width: 54px;
   text-align: center;
   cursor: pointer;
+  user-select: none;
 }
