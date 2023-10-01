@@ -16,22 +16,13 @@ body {
   display: block;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 5px;
-    /*background-color: blue;*/
-}
-
-.containerhorizontal {
+.header {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
   align-items: center;
-
+  justify-content: right;
   background-color: yellow;
-  width: 450px;
 }
 
 /*.header {
@@ -39,8 +30,9 @@ header {
   text-align: right;
 }*/
 
-.containerhorizontal>div {
-  background-color: red;
+.header>div {
+  height: 24px;
+  
 }
 
 .links {
@@ -55,7 +47,7 @@ header {
   height: 24px;
   margin: auto;
   padding: 5px;
-  background-color: gray;
+  background-color: red;
 }
 
 .gray {
@@ -63,22 +55,7 @@ fill: #9aa0a6;
 }
 
 .loginbutton {
-    cursor: pointer;
-    color: #fff;
-    text-decoration: none;
-    background: #1a73e8;
-    border: 1px solid transparent;
-    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: .25px;
-    line-height: 16px;
-    margin-right: 8px;
-    min-width: 96px;
-    padding: 9px 23px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 4px;
+background-color: blue;
 }
 
 /*.logo {
