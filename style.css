@@ -78,13 +78,25 @@ fill: #7a7b7c;
   /*margin: 1rem;*/
   padding-top: 12rem;
   padding-bottom: 12rem;
-  /*background: gray;*/
+  background: gray;
 }
 
 .container>div{
 
-  /*background-color: yellow;*/
+  background-color: yellow;
   margin-bottom: 1rem;
+}
+
+.imagestext {
+  color: #4285f4;
+  position: relative;
+  left: 110px;
+  top: -18px;
+}
+
+.imageslogo {
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  white-space: nowrap;
 }
 
 .searchbar {
@@ -99,6 +111,7 @@ fill: #7a7b7c;
   height: 2.9rem;
   font-size: 1rem;
   /*margin-bottom: 1rem;*/
+  background-color: blue;
 }
 
 .searchbar:focus, .searchbar:hover{
@@ -113,7 +126,7 @@ fill: #7a7b7c;
   font-size: 1.2rem;
   line-height: 2rem;
   white-space: pre;
-  /*background-color: red;*/
+  background-color: red;
 }
 
 .searchbarinput:focus,
@@ -188,6 +201,7 @@ footer {
   text-decoration: none;
   color: inherit;
 }
+
 
 /*
 In chrome >more tools> developer tools
