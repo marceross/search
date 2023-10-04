@@ -10,27 +10,60 @@ body {
   display: block;
 }
 
-header {
+/*header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 5px;
-    /*background-color: blue;*/
+    background-color: blue;
+}*/
+
+/* 
+watched to make a correct navbar using flexbox
+the logo inside the advanced searh made me do everything again
+FLEXBOX NAVBAR TUTORIAL
+https://youtu.be/W-nIX17Gg-Q */
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 35px;
+  /*background-color: red;*/
 }
 
-.containerhorizontal {
+.nav-item {
+list-style: none;
+margin-right: 1rem;
+/*background-color: yellow;*/
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item-logo:first-child {
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.nav-item img {
+  height: 25px;
+}
+
+/*.containernav {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
   align-items: center;
-  /*background-color: yellow;*/
-  width: 390px;
+  height: 30px;
+  background-color: yellow;
 }
 
 .containerhorizontal>div {
-  /*background-color: red;*/
+  background-color: red;
   padding: 11px;
 }
+*/
 
 .links {
   text-decoration: none;
@@ -78,19 +111,24 @@ fill: #7a7b7c;
   /*margin: 1rem;*/
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background: gray;
+  /*background: gray;*/
 }
 
 .container>div{
 
-  background-color: yellow;
+  /*background-color: yellow;*/
   margin-bottom: 1rem;
+}
+
+#logo {
+  width: 290px;
+  height: 110px;
 }
 
 .imagestext {
   color: #4285f4;
   position: relative;
-  left: 110px;
+  left: 215px;
   top: -18px;
 }
 
@@ -111,7 +149,7 @@ fill: #7a7b7c;
   height: 2.9rem;
   font-size: 1rem;
   /*margin-bottom: 1rem;*/
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 .searchbar:focus, .searchbar:hover{
@@ -126,7 +164,7 @@ fill: #7a7b7c;
   font-size: 1.2rem;
   line-height: 2rem;
   white-space: pre;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .searchbarinput:focus,
@@ -170,13 +208,13 @@ fill: #7a7b7c;
 footer {
   background-color: #f3f3f3;
   font-size: 15px;
-  padding: 0;
   position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
   display:flex;
   flex-direction: column;
+  padding: 5px;
   color: #70757a;
 }
 
@@ -189,19 +227,19 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 40px;
+  padding: 0px 20px;
 }
 
 .options {
   display: flex;
   column-gap: 25px;
+  padding: 5px 40px;
 }
 
 .menu a {
   text-decoration: none;
   color: inherit;
 }
-
 
 /*
 In chrome >more tools> developer tools
