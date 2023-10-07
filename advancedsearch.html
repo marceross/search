@@ -30,8 +30,38 @@
     </header>
 
 
-    <div>
-        <p>Búsqueda avanzada</p>
+    <div class="appbar">
+        <label>Búsqueda avanzada</label>
+    </div>
+    <div class="advancedcontainer">
+        <form action="https://www.google.com/search">
+            <label>Mostrar páginas que contengan...</label>
+            <div class="form-row">
+                <label>todas estas palabras:</label>
+                <input type="text" name="as_q">
+            </div>
+            <div class="form-row">
+                <label>esta palabra o frase exactas:
+                </label>
+                <input type="text" name="as_epq">
+            </div>
+            <div class="form-row">
+                <label>cualquiera de estas palabras: </label>
+                <input type="text" name="as_oq">
+            </div>
+            <div class="form-row">
+                <label>ninguna de estas palabras:</label>
+                <input type="text" name="as_eq">
+            </div>
+          
+                    <input type="submit" class="advancedbutton" value="Búsqueda avanzada">
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
 
 </body>
 </html>

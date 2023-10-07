@@ -22,7 +22,15 @@ body {
 watched to make a correct navbar using flexbox
 the logo inside the advanced searh made me do everything again
 FLEXBOX NAVBAR TUTORIAL
-https://youtu.be/W-nIX17Gg-Q */
+https://youtu.be/W-nIX17Gg-Q 
+
+https://codepen.io/KittyGiraudel/pen/nYGVxj/4ab4d7e6e21b63ee0ba51bdd7b3b2abb
+Excellent examples
+CODE PEN, nice tool!
+
+Ckeck flex values by default so not to repeat
+
+*/
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -43,7 +51,7 @@ margin-right: 1rem;
 
 .nav-item-logo:first-child {
   margin-right: auto;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .nav-item img {
@@ -239,6 +247,86 @@ footer {
 .menu a {
   text-decoration: none;
   color: inherit;
+}
+
+.appbar {
+  margin: 40px 10px 0px 20px;
+  border-bottom: 1px solid #dadce0;
+  padding-bottom: 2rem;
+}
+
+.appbar label {
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 35px;
+}
+
+.advancedcontainer {
+  margin: 50px 40px;
+  width: 50vw;
+  min-width: 600px;
+  /*background-color: red;*/
+}
+
+.advancedcontainer label {
+  display: inline-block;
+  width: 16%;
+  font-size: 16px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  /*background-color: yellow;*/
+}
+
+.form-row label {
+  width: 20%;
+  font-size: 12px;
+}
+
+.form-row input[type=text] {
+  width: 65%;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+}
+
+.form-row input:focus {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+.advancedbutton {
+  font-size: 11px;
+  width: 130px;
+  line-height: 100%;
+  height: 30px;
+  background-color: #4d90fe;;
+  color: white;
+  font-weight: bold;
+  min-width: 120px;
+  border-radius: 2px;
+  border: 1px solid #156bbd;
+  text-align: center;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15%;
+}
+
+.advancedbutton:hover {
+  /* check the state in a small tab (:hov) below styles*/
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  background: #357ae8;
 }
 
 /*
